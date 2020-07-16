@@ -1,0 +1,100 @@
+#masthead
+	background: $color-red
+	background: linear-gradient(135deg, #cc3332 0%, #f4bc00 100%)
+	height: 700px
+	padding: 25px 0 0 
+	color: #fff
+	position: relative
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%)
+	@media (min-width: $screen-sm-min)
+		background: linear-gradient(135deg, #cc3332 0%, #cc3332 50%, #f4bc00 100%)
+		height: 750px
+		padding: 55px 80px
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%)
+	header
+		width: 100%
+		display: flex
+		justify-content: space-between
+		margin-bottom: 25px
+		.logo-wrap
+			img.logo
+				width: 167px
+				height: auto
+				@media (min-width: $screen-sm-min)
+					width: 418px
+		.auth
+			text-align: right
+			font-size: 12px
+			@media (min-width: $screen-sm-min)
+				font-size: 16px
+			.signUp
+				margin-left: 15px
+				width: 72px
+				height: 24px
+				font-size: 12px
+				padding: 0
+				@media (min-width: $screen-sm-min)
+					margin-left: 35px
+					width: 120px
+					height: 40px
+					font-size: 16px
+					
+	.left
+		width: 100%
+		order: 2
+		@media (min-width: $screen-sm-min)
+			order: 1
+			width: 60%
+			height: 560px
+			display: flex
+			justify-content: center
+			flex-direction: column
+		#description
+			text-align: center
+			line-height: 1.4375
+			font-size: 16px
+			font-family: $font-text
+			margin-bottom: 20px
+			@media (min-width: $screen-sm-min)
+				text-align: left
+				margin-bottom: 100px
+				line-height: 1.374
+				font-size: 24px
+
+		.cta
+			text-align: center
+			@media (min-width: $screen-sm-min)
+				text-align: left
+			.cta-btn
+				width: 200px
+				height: 45px
+				font-size: 15px
+				transition: $transition-timing
+				@media (min-width: $screen-sm-min)
+					width: 320px
+					height: 72px
+					font-size: 24px
+				&:hover
+					transition: $transition-timing
+
+	
+	.right
+		width: 100%
+		order: 1
+		text-align: center
+		@media (min-width: $screen-sm-min)
+			order: 2
+			width: 40%
+			display: flex
+			flex-direction: column
+
+		img.mascot
+			width: 230px
+			height: auto
+			margin-left: -30px
+			@media (min-width: $screen-sm-min)
+				max-width: 400px
+				width: 100%
+				height: auto
+				margin-left: 50px
+

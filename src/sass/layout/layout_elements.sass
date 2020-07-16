@@ -1,0 +1,29 @@
+html, body 
+	background: #FFF
+	margin: 0 !important
+	padding: 0 !important
+
+.container
+	width: auto 
+	margin: 0 auto
+	padding: 0 20px
+	position: relative
+	@media (min-width: $screen-sm-min)
+		width: 100%
+		max-width: 750px
+		padding: 0 15px
+	@media (min-width: $screen-md-min)
+		width: 100%
+		max-width: 970px
+	@media (min-width: $screen-lg-min)
+		width: 100%
+		max-width: 1250px
+
+.section
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	@media (min-width: $screen-sm-min)
+		justify-content: space-between
+		flex-direction: row
+

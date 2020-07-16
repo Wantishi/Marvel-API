@@ -1,0 +1,40 @@
+=animate($name, $duration, $iteration, $direction, $fill) 
+  -webkit-animation-name: $name
+  -moz-animation-name: $name
+  -o-animation-name: $name
+  -ms-animation-name: $name
+  animation-name: $name
+  -webkit-animation-duration: $duration
+  -moz-animation-duration: $duration
+  -o-animation-duration: $duration
+  -ms-animation-duration: $duration
+  animation-duration: $duration
+  -webkit-animation-iteration-count: $iteration
+  -moz-animation-iteration-count: $iteration
+  -o-animation-iteration-count: $iteration
+  -ms-animation-iteration-count: $iteration
+  animation-iteration-count: $iteration
+  -webkit-animation-direction: $direction
+  -moz-animation-direction: $direction
+  -o-animation-direction: $direction
+  -ms-animation-direction: $direction
+  animation-direction: $direction
+  animation-fill-mode: $fill
+  -webkit-animation-fill-mode: $fill
+
+@keyframes slide-from-left
+  0%
+    margin-left: -100px
+    opacity: 0
+  100%
+    margin-left: 0
+    opacity: 1
+
+
+@keyframes slide-from-right
+  0%
+    margin-right: -100px
+    opacity: 0
+  100%
+    margin-right: 0
+    opacity: 1

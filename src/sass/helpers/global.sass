@@ -1,0 +1,54 @@
+
+// Titles
+h1, h2, h3, h4, h5
+	font-family: $font-title
+	margin-top: 0
+	color: #000
+
+// Text
+body, p 
+	font-family: $font-text
+	font-size: 16px
+p
+	margin-top: 0
+	color: $color-grey
+
+// Links
+a
+	color: #fff
+	text-decoration: none
+	&:hover
+		color: $color-yellow
+
+// Buttons
+button
+	background: $color-yellow
+	color: #fff
+	border: none
+	border-radius: 5px
+	padding: 10px 30px
+	box-shadow: 3px 4px 9px 0px rgba(255,255,255,.16)
+	transition: $transition-timing
+	&:hover
+		// background: radial-gradient(50% 100%, #CC3332 46%, #CC3332 11%, #F4BC00 79%)
+		background: radial-gradient(ellipse at center, #f4bc00 12%, #cc3332 90%)
+		background: conic-gradient(from 25deg, #F4BC00 5%, #C96236 30%, #C45E3C 80%, #F4BC00 100%) 		
+		cursor: pointer
+
+// Clearfix
+.clearfix::after
+  content: ""
+  clear: both
+  display: table
+
+// Remove focus outlines
+*:focus
+	outline: none
+
+// Hide-Show on Responsive Breakpoints
+.visible-xs
+	display: block
+	@media (min-width: $screen-sm-min)
+		display: none
+
+

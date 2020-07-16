@@ -1,0 +1,75 @@
+#body-content
+    padding: 40px 0
+    @media (min-width: $screen-sm-min)
+        padding: 100px 0
+    .title
+        font-size: 24px
+        text-align: center
+        margin-bottom: 45px
+        @media (min-width: $screen-sm-min)
+            font-size: 32px
+            margin-bottom: 60px
+    
+    .content
+        display: flex
+        flex-direction: column
+        @media (min-width: $screen-sm-min)
+            flex-direction: row
+        img#hero
+            width: 100%
+            @media (min-width: $screen-sm-min)
+                height: 300px
+                width: auto 
+                margin-right: 35px
+            @media (min-width: $screen-lg-min)
+                height: 471px
+                width: auto
+                margin-right: 65px
+
+        .blocks-wrap
+            display: flex
+            flex-wrap: wrap
+            padding: 30px 0
+            @media (min-width: $screen-sm-min)
+                padding: 0
+            .block
+                width: 100%
+                margin-bottom: 25px
+                &.genius
+                    order: 1
+                &.engineer
+                    order: 3
+                &.tactician
+                    order: 2
+                &.business
+                    order: 4
+                @media (min-width: $screen-sm-min)
+                    width: calc(50% - 65px)
+                    &:nth-of-type(odd)
+                        margin-right: 65px
+                    &:nth-of-type(even)
+                        margin-left: 65px
+                    &.genius
+                        order: 1
+                    &.engineer
+                        order: 2
+                    &.tactician
+                        order: 4
+                    &.business
+                        order: 3
+                .icon
+                    height: 40px
+                    width: auto
+                    margin-bottom: 15px
+                    @media (min-width: $screen-sm-min)
+                        height: 55px
+                .sub
+                    font-size: 16px
+                    margin-bottom: 20px
+                    @media (min-width: $screen-sm-min)
+                        font-size: 20px
+                p
+                    font-size: 14px
+                    margin-bottom: 0
+                    @media (min-width: $screen-sm-min)
+                        font-size: 16px
